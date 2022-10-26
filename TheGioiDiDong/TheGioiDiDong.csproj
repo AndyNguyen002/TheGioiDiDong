@@ -1,0 +1,290 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EB5D10B-9266-426C-BE3C-783A98C78720}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheGioiDiDong</RootNamespace>
+    <AssemblyName>TheGioiDiDong</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44383</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllDT\Banner\1.png" />
+    <Content Include="AllDT\Banner\2.png" />
+    <Content Include="AllDT\Banner\800-200-800x200-76.png" />
+    <Content Include="AllDT\Banner\r1.png" />
+    <Content Include="AllDT\Banner\r2.png" />
+    <Content Include="AllDT\extra\13.jpg" />
+    <Content Include="AllDT\extra\13pro.jpg" />
+    <Content Include="AllDT\extra\14.jpg" />
+    <Content Include="AllDT\extra\14plus.jpg" />
+    <Content Include="AllDT\extra\ip11.jpg" />
+    <Content Include="AllDT\extra\note11.jpeg" />
+    <Content Include="AllDT\extra\s22.jpg" />
+    <Content Include="AllDT\extra\s225g.jpg" />
+    <Content Include="AllDT\extra\samsungz.jpg" />
+    <Content Include="AllDT\extra\xr11s.jpg" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap-grid.css" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap-grid.min.css" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap-reboot.css" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-4.6.2-dist\js\bootstrap.bundle.js" />
+    <Content Include="bootstrap-4.6.2-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="bootstrap-4.6.2-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-4.6.2-dist\js\bootstrap.min.js" />
+    <Content Include="ChiTiet\ViVo25g\1.jpg" />
+    <Content Include="ChiTiet\ViVo25g\2.jpg" />
+    <Content Include="ChiTiet\ViVo25g\3.jpg" />
+    <Content Include="IconProduct\iphone-14-pro-max-tim-thumb-600x600.jpg" />
+    <Content Include="IconProduct\iphone-xi-xanhla-600x600.jpg" />
+    <Content Include="IconProduct\NoiBat\ban-phim-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Capsac-129x129.png" />
+    <Content Include="IconProduct\NoiBat\chuot-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Dienthoai-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Donghothoitrang-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Donghothongminh-128x129.png" />
+    <Content Include="IconProduct\NoiBat\icon-camera-128x129 %281%29.png" />
+    <Content Include="IconProduct\NoiBat\icon-camera-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Laptop-129x129.png" />
+    <Content Include="IconProduct\NoiBat\Loa-128x128.png" />
+    <Content Include="IconProduct\NoiBat\Manhinhmaytinh-128x129.png" />
+    <Content Include="IconProduct\NoiBat\may-chieu-icon-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Mayin-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Maytinhbo-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Oplung-128x128.png" />
+    <Content Include="IconProduct\NoiBat\Phukiengaming-128x129 %281%29.png" />
+    <Content Include="IconProduct\NoiBat\Phukiengaming-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Sacduphong-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Simthecao-129x129.png" />
+    <Content Include="IconProduct\NoiBat\Tablet-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Tainghe-128x129.png" />
+    <Content Include="IconProduct\NoiBat\Thietbimang-128x129.png" />
+    <Content Include="IconProduct\oppo-reno8-z-5g-vang-thumb-2-600x600.jpg" />
+    <Content Include="IconProduct\realme-c33-thumb-600x600-1-600x600.jpg" />
+    <Content Include="IconProduct\recommend\237630.png" />
+    <Content Include="IconProduct\recommend\acer-aspire-7-gaming-a715-42g-r4xx-r5-nhqaysv008-%2816%29.jpg" />
+    <Content Include="IconProduct\recommend\apple-macbook-air-2020-mgn63saa-%2814%29.jpg" />
+    <Content Include="IconProduct\recommend\bo-phat-song-wifi-6-bang-tan-kep-asus-ax53u-600x600.jpg" />
+    <Content Include="IconProduct\recommend\iphone-12-den-new-2-600x600.jpg" />
+    <Content Include="IconProduct\recommend\iphone-xi-xanhla-600x600.jpg" />
+    <Content Include="IconProduct\recommend\oppo-reno8-z-5g-vang-thumb-2-600x600.jpg" />
+    <Content Include="IconProduct\recommend\pin-polymer-10000mah-ava-plus-jp208-thumb-600x600.jpeg" />
+    <Content Include="IconProduct\recommend\samsung-galaxy-a23-xanh-thumb-600x600.jpg" />
+    <Content Include="IconProduct\recommend\Samsung-Galaxy-A53-xanh-thumb-600x600.jpg" />
+    <Content Include="IconProduct\recommend\samsung-galaxy-a73-5g-xanh-thumb-600x600.jpg" />
+    <Content Include="IconProduct\recommend\tai-nghe-bluetooth-airpods-pro-2-magsafe-charge-apple-mqd83-trang-090922-034128-600x600.jpeg" />
+    <Content Include="IconProduct\recommend\tai-nghe-bluetooth-true-wireless-mozard-ts13-thumb-2-600x600.jpeg" />
+    <Content Include="IconProduct\recommend\vivo-v25-5g-vang-thumb-1-1-600x600.jpg" />
+    <Content Include="IconProduct\recommend\xiaomi-poco-c40-thumb-vang-600x600.jpg" />
+    <Content Include="IconProduct\Samsung-Galaxy-A53-xanh-thumb-600x600.jpg" />
+    <Content Include="IconProduct\samsung-galaxy-a73-5g-xanh-thumb-600x600.jpg" />
+    <Content Include="IconProduct\samsung-galaxy-m53-nau-thumb-600x600.jpg" />
+    <Content Include="IconProduct\Vivo-V23e-1-2-600x600.jpg" />
+    <Content Include="IconProduct\vivo-v25-5g-vang-thumb-1-1-600x600.jpg" />
+    <Content Include="IconProduct\vivoWeek\vivo-V23-5G-5-1-2-600x600.jpg" />
+    <Content Include="IconProduct\vivoWeek\vivo-v25e-vang-thumb-1-2-600x600.jpg" />
+    <Content Include="IconProduct\vivoWeek\Vivo-y15A-trang-xanh-600x600.jpg" />
+    <Content Include="IconProduct\vivoWeek\Vivo-y15s-2021-xanh-den-660x600.jpg" />
+    <Content Include="IconProduct\vivoWeek\vivo-y16-vang-thumb-600x600.jpg" />
+    <Content Include="IconProduct\vivoWeek\vivo-y21-white-01-1-600x600.jpg" />
+    <Content Include="IconProduct\vivoWeek\vivo-y21s-blue-600x600.jpg" />
+    <Content Include="IconProduct\vivoWeek\vivo-y21s-white-600x600.jpg" />
+    <Content Include="IconProduct\vivoWeek\vivo-y22s-vang-thumb-1-2-600x600.jpeg" />
+    <Content Include="IconProduct\vivoWeek\Vivo-y33s-yellow-thumb-600x600.jpg" />
+    <Content Include="IconProduct\xiaomi-poco-c40-thumb-vang-600x600.jpg" />
+    <Content Include="IconProduct\XuHuong\applewatch.png" />
+    <Content Include="IconProduct\XuHuong\DienThoai.png" />
+    <Content Include="IconProduct\XuHuong\DienThoai1.png" />
+    <Content Include="IconProduct\XuHuong\DongHo1.jpg" />
+    <Content Include="IconProduct\XuHuong\LapTop.png" />
+    <Content Include="IconProduct\XuHuong\LapTop1.jpg" />
+    <Content Include="IconProduct\XuHuong\TaiNghe.png" />
+    <Content Include="IconProduct\XuHuong\TaiNghe1.jpg" />
+    <Content Include="Icon\AVAFashion.png" />
+    <Content Include="Icon\AVAJI.png" />
+    <Content Include="Icon\AVAKid.png" />
+    <Content Include="Icon\AVASport.png" />
+    <Content Include="Icon\BachHoaXanh.png" />
+    <Content Include="Icon\DaThongBao.png" />
+    <Content Include="Icon\DIenMayXanh.png" />
+    <Content Include="Icon\diKem1.png" />
+    <Content Include="Icon\diKem2.png" />
+    <Content Include="Icon\diKem3.png" />
+    <Content Include="Icon\DMCA.png" />
+    <Content Include="Icon\DongTien.png" />
+    <Content Include="Icon\fblogo.png" />
+    <Content Include="Icon\handle_cert.png" />
+    <Content Include="Icon\iconWeb.png" />
+    <Content Include="Icon\icon_zalo-removebg-preview.png" />
+    <Content Include="Icon\LogoGiohang.png" />
+    <Content Include="Icon\LogoSearch.png" />
+    <Content Include="Icon\LogoTheGioiDiDong.png" />
+    <Content Include="Icon\MaTheCao.png" />
+    <Content Include="Icon\RedOne.png" />
+    <Content Include="Icon\TheGame.png" />
+    <Content Include="Icon\topzone.png" />
+    <Content Include="Icon\VeMayBay.png" />
+    <Content Include="Icon\ytlogo.png" />
+    <Content Include="Picture\adBanner1.png" />
+    <Content Include="Picture\adBanner2.png" />
+    <Content Include="Picture\Banner2.png" />
+    <Content Include="Picture\Bigbanner.png" />
+    <Content Include="Slider\6A2C6077-4BB0-4CC2-9103-031401E5D41F-720x220.png" />
+    <Content Include="Slider\720-220-720x220-105.png" />
+    <Content Include="Slider\720-220-720x220-145.png" />
+    <Content Include="Slider\720-220-720x220-156.png" />
+    <Content Include="Slider\720-220-720x220-157.png" />
+    <Content Include="Slider\720-220-720x220-159.png" />
+    <Content Include="Slider\aseri-720-220-720x220-10.png" />
+    <Content Include="Slider\GiamGiaOnline\380-x-200-380x200-4.png" />
+    <Content Include="Slider\GiamGiaOnline\380x200--1--380x200.jpg" />
+    <Content Include="Slider\GiamGiaOnline\Desk-380x200.jpg" />
+    <Content Include="Slider\GiamGiaOnline\VNPay-Toan-bo-san-pham-380x200.png" />
+    <Content Include="Slider\GiamGiaOnline\VNPayAppleWatch-380x200.png" />
+    <Content Include="Slider\GiamGiaOnline\VnPaylaptop-380x200.png" />
+    <Content Include="Slider\iP14-da-co-hang-720-220-720x220.png" />
+    <Content Include="Slider\productShow\vivo1.jpg" />
+    <Content Include="Slider\productShow\vivo2.jpg" />
+    <Content Include="Slider\productShow\vivo3.jpg" />
+    <Content Include="Slider\productShow\vivo4.jpg" />
+    <Content Include="Slider\productShow\vivo5.jpg" />
+    <Content Include="Slider\VivoWeek\1.png" />
+    <Content Include="Slider\VivoWeek\2.png" />
+    <Content Include="Slider\VivoWeek\3.png" />
+    <Content Include="Slider\VivoWeek\4.png" />
+    <Content Include="Slider\VivoWeek\5.png" />
+    <Content Include="Web.config" />
+    <Content Include="Web\ChiTietSanPham\CTSP.css" />
+    <Content Include="Web\ChiTietSanPham\CTSP.html" />
+    <Content Include="Web\ChiTietSanPham\main.css" />
+    <Content Include="Web\DienThoai\DT.css" />
+    <Content Include="Web\DienThoai\DT.html" />
+    <Content Include="Web\DienThoai\main.css" />
+    <Content Include="Web\LichSuDon\index.html" />
+    <Content Include="Web\LichSuDon\LSD.css" />
+    <Content Include="Web\LichSuDon\main.css" />
+    <Content Include="Web\TrangChu\index.html" />
+    <Content Include="Web\TrangChu\main.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap-grid.css.map" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap-4.6.2-dist\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap-4.6.2-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="bootstrap-4.6.2-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="bootstrap-4.6.2-dist\js\bootstrap.js.map" />
+    <Content Include="bootstrap-4.6.2-dist\js\bootstrap.min.js.map" />
+    <Content Include="ChiTiet\New shortcut.lnk" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53322</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44383/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
